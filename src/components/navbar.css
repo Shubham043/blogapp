@@ -1,0 +1,31 @@
+.navbar{
+    width: 100%;
+    font-size: 24px;
+    height: auto;
+    gap: 4rem;
+    color: black;
+    
+}
+.navbar ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:flex-end;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-link {
+    display: inline-block;
+    padding: 10px;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .nav-link:hover {
+    background-color: #999;
+  }
+  

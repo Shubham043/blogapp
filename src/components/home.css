@@ -1,0 +1,80 @@
+
+body{
+background-color: rgba(79, 79, 101, 0.77);
+
+}
+h2{
+    text-align: center;
+    color: white;
+    height: 40px;
+    font-size: 30px;
+
+}
+:hover{
+    color: black;
+}
+.post-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0.3rem;
+  }
+  
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    gap: 0rem;
+    width: auto;
+    height: auto;
+    background-color: rgba(59, 50, 50, 0.245);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    /* overflow-wrap: break-word; */
+    overflow: hidden;
+  }
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: rgba(255, 255, 255, 0.822); */
+    border: 1px solid #81525272;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 0;
+    gap: 1rem;
+    width: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #2c0d0d6a;
+   
+  }
+  .card:hover{
+    transform: scale(1.1);
+  }
+  
+  .post-card h3 {
+    /* position: relative; */
+    font-size: 24px;
+    font-family: cursive;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* top: 0rem; */
+    height: auto;
+    /* color: red; */
+    margin-bottom: 10rem;
+  }
+  
+  .post-card p {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: rgb(10, 48, 10);
+    height: auto;
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+  
