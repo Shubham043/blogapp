@@ -51,3 +51,16 @@
 .post-card button[type="submit"]:hover {
   background-color: #007bff;
 }
+@media only screen and (max-width: 580px) {
+  /* CSS styles here will apply only to devices with a maximum width of 480px, such as phones */
+  body {
+    font-size: 14px;
+  }
+  .post-card{
+    height: 20rem;
+    width: 100%;
+    margin: 0;
+  }
+
+ 
+}
