@@ -78,3 +78,29 @@ h2{
     margin-bottom: 2rem;
   }
   
+  @media only screen and (max-width: 1080px) {
+   
+    body {
+      font-size: 14px;
+    }
+    .post-table {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0.3rem;
+      }
+    /* More styles here */
+  }
+  @media only screen and (max-width: 580px) {
+    /* CSS styles here will apply only to devices with a maximum width of 480px, such as phones */
+    body {
+      font-size: 14px;
+    }
+    .post-table {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.3rem;
+      }
+   
+  }
+  
+  
