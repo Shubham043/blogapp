@@ -14,15 +14,14 @@ function Login() {
     e.preventDefault();
     axios.post('https://electro-bkend.onrender.com/api/users/logIn', { email, password }, {
         
-        headers: {
-            Authorization: `Bearer ${localStorage.getItem('token')}`
-        }
+      message :"login succesfull",
+      method:"post" 
     })
       .then(response => {
         // handle successful login
         localStorage.setItem('token', response.data.token);
         axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
-        navigate('/bloglist');
+        navigate('/postform');
         console.log(response.data);
       })
       .catch(error => {
@@ -43,7 +42,10 @@ function Login() {
         <button onClick={handleSubmit} type="submit"> login</button>
         {error && <p className="error">{error}</p>}
       </form>
-      <span>don't have an account</span> <a href="/">Sign In here</a>.
+      <div className="signup">
+      <span >Don't have an account</span> <a href="/">Sign In here</a>
+    </div>
+
     </div>
   );
 }

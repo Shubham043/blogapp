@@ -46,8 +46,10 @@ button[type="submit"]:hover {
 
 .signup {
   margin-top: 10px;
-  font-size: 14px;
-  color: #333333;
+  font-size: 18px;
+  gap: 1rem;
+  color: #ffffff;
+
   text-align: center;
 }
 

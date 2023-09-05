@@ -8,6 +8,8 @@
   /* width: 300px; */
   font-size: 24px;
   height: 10rem;
+  font-family:cursive;
+  color: #007bff;
   background-color: rgba(59, 50, 50, 0.245);
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.903);
@@ -33,6 +35,7 @@
   border: none;
   background-color: #dcdadada;
   margin-top: 5px;
+  
   /* height: 20rem; */
   margin-bottom: 5px;
   font-size: 16px;
@@ -42,8 +45,8 @@
   padding: 10px;
   border-radius: 5px;
   border: none;
-  background-color: #094f94f4;
-  color: white;
+  background-color: #0080fff4;
+  color: rgb(255, 255, 255);
   font-size: 16px;
   cursor: pointer;
 }
@@ -51,6 +54,8 @@
 .post-card button[type="submit"]:hover {
   background-color: #007bff;
 }
+
+
 @media only screen and (max-width: 580px) {
   /* CSS styles here will apply only to devices with a maximum width of 480px, such as phones */
   body {
