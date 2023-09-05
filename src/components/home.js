@@ -23,23 +23,27 @@ function BlogList() {
     }, []);
 
     const handleDeletePost = async (postId) => {
-        try {
-            const response = await axios.delete(
-                `https://electro-bkend.onrender.com/api/posts/${postId}`,
-                {
-                    headers: {
-                        Authorization: `Bearer ${localStorage.getItem(
-                            "token"
-                        )}`,
-                    },
-                }
-            );
-            console.log(response.data);
-            // Remove the deleted post from the state
-            setPosts(posts.filter((post) => post._id !== postId));
-        } catch (error) {
-            console.error(error);
+        const confirmation = window.confirm(" Are you sure you want to delete");
+        if(confirmation){  
+             try {
+                 const response = await axios.delete(
+                     `https://electro-bkend.onrender.com/api/posts/${postId}`,
+                     {
+                         headers: {
+                             Authorization: `Bearer ${localStorage.getItem(
+                                 "token"
+                             )}`,
+                         },
+                     }
+                 );
+                 console.log(response.data);
+                 // Remove the deleted post from the state
+                 setPosts(posts.filter((post) => post._id !== postId));
+             } catch (error) {
+                 console.error(error);
+             }
         }
+      
     };
 
     const handledone = async (postId) => {
