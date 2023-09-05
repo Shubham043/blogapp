@@ -1,9 +1,9 @@
 .navbar{
     width: 100%;
-    font-size: 24px;
+    font-size: 20px;
     height: auto;
     gap: 4rem;
-    color: black;
+    color: rgb(255, 255, 255);
     
 }
 .navbar ul{
@@ -17,8 +17,8 @@
 .nav-link {
     display: inline-block;
     padding: 10px;
-    background-color: #ccc;
-    color: #000;
+    background-color: #51a7f8;
+    color: #000000;
     text-decoration: none;
     border-radius: 5px;
     margin-right: 10px;

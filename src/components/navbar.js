@@ -10,10 +10,10 @@ function Navbar() {
           <Link to="/" className="nav-link">Logout</Link>
         </li>
         <li>
-          <Link to="/bloglist" className="nav-link">YourBlogs</Link>
+          <Link to="/bloglist" className="nav-link">List</Link>
         </li>
         <li>
-          <Link to="/postform" className="nav-link">Post Form</Link>
+          <Link to="/postform" className="nav-link">Create</Link>
         </li>
       </ul>
     </nav>

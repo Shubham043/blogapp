@@ -42,7 +42,7 @@ function SignIn() {
     </div>
     <button type="submit" className="btn" onClick={handleSubmit}>Sign In</button>
     <div className="signup">
-      <span>already have an account</span> <a href="/login">Log In here</a>.
+      <span>Already have an account!</span> <a href="/login">Log In here</a>.
     </div>
   </div>
   

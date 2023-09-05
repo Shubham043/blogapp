@@ -1,11 +1,15 @@
 
 body{
-background-color: rgba(79, 79, 101, 0.77);
-
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
 }
 h2{
     text-align: center;
-    color: white;
+    color:rgba(0, 247, 255, 0.927);
     height: 40px;
     font-size: 30px;
 
@@ -22,16 +26,15 @@ h2{
   .post-card {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    gap: 0rem;
     width: auto;
-    height: auto;
-    background-color: rgba(59, 50, 50, 0.245);
+    margin: 2rem;
+    padding: 2rem;
+    height: 400px;
+    background-color: rgba(9, 151, 124, 0.1);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     padding: 1rem;
-    /* overflow-wrap: break-word; */
+    overflow-wrap: break-word;
     overflow: hidden;
   }
 .card {
@@ -40,7 +43,7 @@ h2{
     justify-content: center;
     align-items: center;
     /* color: rgba(255, 255, 255, 0.822); */
-    border: 1px solid #81525272;
+    border: 1px solid #30070772;
     border-radius: 5px;
     padding: 10px;
     margin: 0;
@@ -58,24 +61,33 @@ h2{
     /* position: relative; */
     font-size: 24px;
     font-family: cursive;
+    font-variant-caps: all-petite-caps;
     display: flex;
+    color: #ffffff;
     flex-wrap: wrap;
     justify-content: center;
-    /* top: 0rem; */
-    height: auto;
-    /* color: red; */
-    margin-bottom: 10rem;
   }
   
   .post-card p {
     display: flex;
-    flex-wrap: wrap;
+    
+    align-items: center;
     justify-content: center;
-    color: rgb(10, 48, 10);
-    height: auto;
+    color: rgb(53, 255, 53);
+   
     font-size: 22px;
     line-height: 1.5;
-    margin-bottom: 2rem;
+ 
+  }
+  .post-table .icon1{
+    background-color: rgb(236, 236, 236);
+    border-radius: 4px;
+  }
+  .post-table .icon2{
+    background-color: rgb(27, 217, 27);
+    border-radius: 4px;
+    padding: 2px;
+    
   }
   
   @media only screen and (max-width: 1080px) {
