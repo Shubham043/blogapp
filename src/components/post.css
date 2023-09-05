@@ -1,35 +1,42 @@
 
-.post-card {
+.post-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
-  /* width: 300px; */
+  /* gap: 2rem; */
+  /* max-width: auto; */
   font-size: 24px;
-  height: 10rem;
-  font-family:cursive;
-  color: #007bff;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  color: #0f73de;
   background-color: rgba(59, 50, 50, 0.245);
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.903);
-  /* padding: 3rem; */
-  margin: 3rem;
+  
+}
+.post-form form{
+  padding: 4px;
+  margin: 4px;
+
 }
 
-.post-card label {
+
+.post-form label {
   display: flex;
   flex-direction: column;
-  width: 100%;
   font-weight: 900;
   height: auto;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 4px;
+  padding: 2rem;
   background-color: #113c5764;
   margin-bottom: 10px;
 
   
 }
-.post-card input,
-.post-card textarea {
+.post-form input,
+.post-form textarea {
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -41,7 +48,7 @@
   font-size: 16px;
   resize: none;
 }
-.post-card button {
+.post-form button {
   padding: 10px;
   border-radius: 5px;
   border: none;
@@ -51,7 +58,7 @@
   cursor: pointer;
 }
 
-.post-card button[type="submit"]:hover {
+.post-form button[type="submit"]:hover {
   background-color: #007bff;
 }
 
@@ -62,7 +69,7 @@
     font-size: 14px;
   }
   .post-card{
-    height: 20rem;
+    height: 50%;
     width: 100%;
     margin: 0;
   }
