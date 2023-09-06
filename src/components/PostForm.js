@@ -36,8 +36,9 @@ function PostForm() {
   };
 
   return (
-    <div className="post-card">
+    <div className="post-form">
       <h1>Create your task</h1>
+
       <form onSubmit={handleSubmit}>
 
         <label>
